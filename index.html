@@ -14,12 +14,22 @@
 </head>
 
 <body>
+
+<h1>My Project</h1>
+
+	<p> blah blah blah </p>
+
+
 <div id="mapid" style="width: 600px; height: 400px;"></div>
 <script type="text/javascript">
-var myMap = L.map('mapid').setView([45.4192857, -75.6973237],13);
+var myMap = L.map('mapid').setView([41.390205, 2.154007],13);
 L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.png',
 	{maxZoom: 19
 }).addTo(myMap);
+
+L.tileLayer('https://mapwarper.net/maps/tile/52013/{z}/{x}/{y}.png',
+  {maxZoom: 19}
+).addTo(myMap);
 
 // load a GeoJSON from external file
 $.getJSON("point-data.geojson", function(data) {
@@ -35,3 +45,5 @@ $.getJSON("point-data.geojson", function(data) {
 
 </body>
 </html>
+
+

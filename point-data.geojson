@@ -20,6 +20,16 @@
     "properties": {
     "Label":"Not the centre of the map "
     }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 2.1543, 41.399222]
+    },
+    "properties": {
+    "Label":"Barcelona map!"
+    }
   }
 ]
 }
